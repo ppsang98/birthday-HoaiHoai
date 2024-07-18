@@ -360,13 +360,13 @@ function generateBalloonPath( x, y, size ){
 }
 
 function createRandomFirework() {
-    var x = Math.random() * w,
-        y = Math.random() * h;
+    var x = (Math.random() * 2 - 1) * w,
+        y = (Math.random() * 2 - 1) * h;
     letters.push(new Letter(' ', x, y));
 }
 
 // Tạo thêm pháo hoa ngẫu nhiên
-setInterval(createRandomFirework, 1000);
+setInterval(createRandomFirework, 500);
 
 function anim(){
 	
