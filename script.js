@@ -413,7 +413,7 @@ setInterval(() => {
         }
     }
 
-}, 20 * 1000);
+}, 25 * 1000);
 
 window.addEventListener( 'resize', function(){
 	
