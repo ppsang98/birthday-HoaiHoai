@@ -1,0 +1,63 @@
+/* Add styles to make balloons more realistic */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* Ensure the canvas scales with the window size */
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    margin: 0 0;
+    position: absolute;
+    font: 16px Verdana;
+    color: #eee;
+    height: 25px;
+    top: calc(100vh - 30px);
+    text-shadow: 0 0 2px white;
+}
+
+p a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+span {
+    font-size: 11px;
+}
+
+p > a:first-of-type {
+    font-size: 20px;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* Style to make balloons round */
+.balloons {
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    p {
+        font-size: 0.8rem;
+    }
+
+    canvas {
+        /* Adjust canvas size for smaller screens */
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Additional responsive styling */
+@media (max-width: 400px) {
+    p {
+        font-size: 0.6rem;
+    }
+}
